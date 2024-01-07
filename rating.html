@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking System - Rating</title>
+</head>
+<body>
+
+<h1>Rating</h1>
+<form id="ratingForm">
+    <!-- Add rating form fields here -->
+    <label for="serviceProvider">Select a service provider:</label>
+    <select id="serviceProvider" name="serviceProvider" required>
+        <!-- Populate options dynamically based on available service providers -->
+        <option value="provider1">Service Provider 1</option>
+        <option value="provider2">Service Provider 2</option>
+        <option value="provider3">Service Provider 3</option>
+    </select>
+
+    <label for="rating">Rate the service (1-5):</label>
+    <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+    <button type="button" onclick="performRating()">Submit Rating</button>
+</form>
+
+<div id="output"></div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+</nav>
+
+<script src="booking-system.js"></script>
+
+<script>
+function performRating() {
+    const selectedServiceProvider = document.getElementById('serviceProvider').value;
+    const ratingValue = document.getElementById('rating').value;
+    customer.reviewService(selectedServiceProvider, `Rated: ${ratingValue}`);
+    // Additional logic for handling the rating on the server-side would go here
+}
+</script>
+
+</body>
+</html>

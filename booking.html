@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking System - Booking</title>
+</head>
+<body>
+
+<h1>Booking</h1>
+<form id="bookingForm">
+    <!-- Add booking form fields here -->
+    <label for="service">Select a service:</label>
+    <select id="service" name="service" required>
+        <!-- Populate options dynamically based on available services -->
+        <option value="service1">Service 1</option>
+        <option value="service2">Service 2</option>
+        <option value="service3">Service 3</option>
+    </select>
+
+    <button type="button" onclick="performBooking()">Book Service</button>
+</form>
+
+<div id="output"></div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+    <a href="services.html">Services</a>
+    <a href="rating.html">Rating</a>
+</nav>
+
+<script src="booking-system.js"></script>
+
+<script>
+function performBooking() {
+    const selectedService = document.getElementById('service').value;
+    customer.bookService(selectedService);
+    // Additional logic for handling the booking on the server-side would go here
+}
+</script>
+
+</body>
+</html>

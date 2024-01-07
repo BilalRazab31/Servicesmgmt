@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking System - Login</title>
+</head>
+<body>
+
+<h1>Login</h1>
+<form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="performLogin()">Login</button>
+</form>
+
+<div id="output"></div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="rating.html">Rating</a>
+</nav>
+
+<script src="booking-system.js"></script>
+
+<script>
+function performLogin() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    const user = new User(username, password);
+    user.logIn();
+    // Additional logic for handling the login on the server-side would go here
+}
+</script>
+
+</body>
+</html>

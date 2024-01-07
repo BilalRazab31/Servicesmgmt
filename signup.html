@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking System - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 70px; /* Adjusted to account for the fixed navbar */
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+        .ood-concept {
+            color: green;
+            font-weight: bold;
+        }
+
+        .class-name {
+            color: purple;
+            font-weight: bold;
+        }
+
+        .method-name {
+            color: blue;
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+        }
+        hr{
+            width: 50%;
+            color: green;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: rgb(101, 129, 60);">
+    <a class="navbar-brand" href="#">
+        <!-- Add your logo image or text here -->
+        <img src="logo_ooad.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        Service Booking
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rating.html">Rating</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+<center>   
+    
+<h1>
+<hr><hr><hr>
+     
+    Service Booking System</h1>
+</center>
+<hr><hr><hr>
+<h1>Sign Up</h1>
+
+<form id="signupForm">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            <small class="form-text text-muted">Please enter a 10-digit mobile number.</small>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="profileImg">Profile Image:</label>
+            <input type="file" class="form-control-file" id="profileImg" name="profileImg">
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-success btn-block mt-3" onclick="performSignUp()">Sign Up</button>
+</form>
+
+<script src="booking-system.js"></script>
+
+
+
+<script>
+    function performSignUp() {
+        alert('Redirecting to login page.');
+        window.location.href = 'login.html';
+    }
+</script>
+
+
+<footer style="background-color: rgb(101, 129, 60);">
+    <p>&copy; Booking System OOAD Project</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="booking-system.js"></script>
+
+</body>
+</html>

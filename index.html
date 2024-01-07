@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking System - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 70px; /* Adjusted to account for the fixed navbar */
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+        .ood-concept {
+            color: green;
+            font-weight: bold;
+        }
+
+        .class-name {
+            color: purple;
+            font-weight: bold;
+        }
+
+        .method-name {
+            color: blue;
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+        }
+        hr{
+            width: 50%;
+            color: green;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: rgb(101, 129, 60);">
+    <a class="navbar-brand" href="#">
+        <!-- Add your logo image or text here -->
+        <img src="logo_ooad.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        Service Booking
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rating.html">Rating</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+<center>   
+    
+<h1>
+<hr><hr><hr>
+     
+    Service Booking System</h1>
+</center>
+<hr><hr><hr>
+<h2>The Essence of Object-Oriented Design (OOD):</h2>
+
+<p>The <span class="ood-concept">Object-Oriented Design (OOD)</span> principles play a pivotal role in the Service Booking System, shaping its architecture and functionality.</p>
+
+<div class="container">
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-body">
+                <h2>User-Centric Approach with <span class="ood-concept">Classes:</span></h2>
+                <p>The project adopts a <span class="ood-concept">user-centric</span> approach by organizing functionalities into <span class="class-name">classes</span>. Each menu item on the navigation bar corresponds to a specific <span class="class-name">class</span>, encapsulating the functionality associated with that particular aspect of the system.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>SignUp - <span class="ood-concept">Encapsulation</span> and <span class="ood-concept">Abstraction:</span></h2>
+                <p>The <span class="method-name">signUp()</span> method in the <span class="class-name">User</span> class embodies the <span class="ood-concept">encapsulation</span> and <span class="ood-concept">abstraction</span> principles of OOD. It encapsulates the logic for user registration, providing a clear separation of concerns and maintaining a clean interface for user interactions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr><hr><hr>
+<div class="container">
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Service Discovery - <span class="ood-concept">Polymorphism:</span></h2>
+                <p>The <span class="class-name">SearchServices</span> class showcases the <span class="ood-concept">polymorphic</span> nature of classes. It adapts to various search queries, triggering method calls that filter through available services, providing a versatile and dynamic user experience.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Booking Services - <span class="ood-concept">Dynamic Relationships:</span></h2>
+                <p>Booking a service involves interactions between the <span class="class-name">Customer</span> and <span class="class-name">ServiceProvider</span> classes. The <span class="method-name">Booking</span> class orchestrates the acceptance or rejection process, symbolizing <span class="ood-concept">dynamic relationships</span> between classes and showcasing the elegance of OOD.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Rating - <span class="ood-concept">Encapsulation:</span></h2>
+                <p>The <span class="class-name">ReviewService</span> class encapsulates the logic for reviewing and rating services. User feedback is neatly stored within instances of the <span class="class-name">ServiceProvider</span> class, demonstrating the <span class="ood-concept">encapsulation</span> principle of OOD.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Admin - <span class="ood-concept">Hierarchy and Control:</span></h2>
+                <p>The <span class="class-name">Admin</span> class, serving as the project administrator, manages the system with a clear <span class="ood-concept">hierarchical</span> structure. From auto-approving services to disabling them, the <span class="class-name">Admin</span> class embodies <span class="ood-concept">control</span> and <span class="ood-concept">governance</span> over the system.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr><hr><hr>
+<a type="button" class="btn btn-success btn-lg btn-block mt-3" href="signup.html">
+    Go Practical
+</a>
+<hr><hr><hr>
+
+
+<footer style="background-color: rgb(101, 129, 60);">
+    <p>&copy; Booking System OOAD Project</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="booking-system.js"></script>
+
+</body>
+</html>
